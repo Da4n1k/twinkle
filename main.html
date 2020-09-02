@@ -1,0 +1,44 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    <title>Calculator 1.0</title>
+</head>
+<body>
+    <div class="info" id="info1">
+       <h1 class="textLogo">A program for solving examples in js.</h1>
+    
+        <input class="question" id="userInput" type="text">
+
+        <button class="execBut" accesskey="Enter" type="button" onclick="submitShowResult()">Execute.</button>
+
+        <output class="answer" id='result' name="result">
+        </output>
+
+        <h1 class="specText">Note:</h1>
+        <p class="specInfo">* the program does not solve equations.</p>
+    </div>
+
+    <script>
+    function submitShowResult() {
+        var inputRow = document.getElementById("userInput").value;
+
+        if (!inputRow) {
+
+            alert("Entered input row!");
+
+        }else   {
+            let result = eval(inputRow);
+
+            let show = document.getElementById('result');
+            
+            show.value = result;
+        }
+    }
+    </script>
+
+</body>
+</html>

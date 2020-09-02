@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Neucha', cursive;
+}
+body {
+    height:  100vh;
+    background: rgb(255,205,0);
+    background: linear-gradient(142deg, rgba(255, 205, 0, 1) 0%, rgba(247, 45, 253,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info {
+    width: 400px;
+    height: 500px;
+    background: #ffff;
+    border-radius: 2px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), -3px -3px 3px rgba(0, 0, 0, 0.2);
+
+}
+.question {
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    background: #fff;
+    margin: 20px auto;
+    border: none;
+    border-radius: 5px;
+    text-indent: 6px;
+    font-size: 1.4em;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3),
+    inset -1px -1px 1px rgba(0, 0, 0, 0.3);
+}
+.textLogo {
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+}
+.specText {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.specInfo {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+button.execBut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    border-radius: 6px;
+    border: none;
+    width: 100px ;
+    height: 35px ;
+    background-color: #FF8000;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0px 4px 1px rgba(247,124,0);
+   /* transition: 2s; */
+
+}
+button.execBut:hover { background: rgb(247,124,0);}
+button.execBut:active {
+    background: rgb(225,114,2);
+    box-shadow: 0 3px rgb(225,114,2) inset;
+}
+button,
+button:active,
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+
+.answer{
+    width: 140px;
+    height: 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-align: center;
+    text-indent: 5px;
+    font-size: 1.4em;
+    font-weight: bold;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3),
+    inset -1px -1px 1px rgba(0, 0, 0, 0.3);
+    margin-left: 50px;
+}
+
+
+ @media screen and (max-width: 500px){
+     .execBut{
+        position: relative;
+     }
+     .answer{
+         position: relative;
+     }
+     .specText{
+         position: relative;
+     }
+     .specInfo{
+         position: relative;  
+     }
+ }
+@media screen and (max-width: 400px){
+    .question{
+        width: 275px;
+    }
+    button.execBut{
+        position: relative;
+        margin-left: 50px;
+    }
+    .answer{
+        position: relative;
+        margin-left: 50px;
+    }
+}
