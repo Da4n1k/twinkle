@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="info" id="info1">
+    
        <h1 class="textLogo">A program for solving examples in js.</h1>
     
         <input class="question" id="userInput" type="text">
@@ -19,22 +20,25 @@
         </output>
 
         <h1 class="specText">Note:</h1>
+
         <p class="specInfo">* the program does not solve equations.</p>
+
+        <p class="infoCoup">© 2020 Young da4a, Inc.</p>
     </div>
 
     <script>
     function submitShowResult() {
         var inputRow = document.getElementById("userInput").value;
+        
 
-        if (!inputRow) {
-
-            alert("Entered input row!");
+        if (inputRow == 0 || inputRow == " " || inputRow.match(/[a-zA-Zа-яА-ЯёЁ]+/)) {
+            alert("You haven't entered an example. Enter an example!"); 
 
         }else   {
             let result = eval(inputRow);
 
             let show = document.getElementById('result');
-            
+
             show.value = result;
         }
     }
