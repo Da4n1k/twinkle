@@ -6,7 +6,6 @@
 }
 body {
     height:  100vh;
-    background: rgb(255,205,0);
     background: linear-gradient(142deg, rgba(255, 205, 0, 1) 0%, rgba(247, 45, 253,1) 100%);
     display: flex;
     justify-content: center;
@@ -39,11 +38,17 @@ body {
 .textLogo {
     text-align: center;
     margin: 20px;
+    margin-top: 40px;
     font-size: 20px;
 }
 .specText {
     margin-top: 20px;
     font-size: 20px;
+    text-align: center;
+}
+.infoCoup{
+    margin-top: 160px;
+    color: darkgray;
     text-align: center;
 }
 .specInfo {
